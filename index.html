@@ -5,7 +5,7 @@
   </head>
     <body>
       <h1>Volunteer Form</h1>
-        <form>
+        <form action="/lab4formscript.php">
   	  First name:<br>
  	    <input type="text" name="firstName"><br>
   	  Last name:<br>
@@ -14,13 +14,10 @@
 	    <input type="text" name="phone"><br>
 	  Email address:<br>
 	    <input type="text" name="email"><br>
-	</form>
 	  <p><b>Gender:</b></p>
-	    <form>
   	      <input type="radio" name="gender" value="male" checked> Male<br>
               <input type="radio" name="gender" value="female"> Female<br>
   	      <input type="radio" name="gender" value="other"> Other
-	    </form>
 	      <p><b>Age:</b></p>
 	        <select name="age">
   	          <option value="under18">Under 18</option>
@@ -32,7 +29,6 @@
 	          <option value="65+">65+</option>
                 </select>
 	          <p><b>My Availability:</b></p>
-	            <form>
   		      <input type="checkbox" name="available" value="Monday">Monday<br>
   		      <input type="checkbox" name="available" value="Tuesday">Tuesday<br>
 		      <input type="checkbox" name="available" value="Wednesday">Wednesday<br>
@@ -40,11 +36,12 @@
 		      <input type="checkbox" name="available" value="Friday">Friday<br>
 		      <input type="checkbox" name="available" value="Saturday">Saturday<br>
 		      <input type="checkbox" name="available" value="Sunday">Sunday<br>
-                    </form>
 	              <p><b>Comments:</b></p>
 	    	        <textarea name="comments" rows="10" cols="50">  
                         </textarea>
-	   		  <p hidden>Nick Bledsoe, Creator (nbledsoe@hawk.iit.edu)</p hidden>
+			  <input type="submit" value="Submit">
+	   		    <p hidden>Nick Bledsoe, Creator (nbledsoe@hawk.iit.edu)</p hidden>
+	    </form>
     </body>
 	            
 
