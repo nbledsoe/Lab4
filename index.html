@@ -7,19 +7,19 @@
       <h1>Volunteer Form</h1>
         <form method="POST" action="https://github.com/dkriegls/itmd-361-spring2018/blob/master/labs/lab4/lab4formscript.php">
   	  First name:<br>
- 	    <input type="text" name="firstName"><br>
+ 	    <input type="text" name="first_name_field"><br>
   	  Last name:<br>
- 	    <input type="text" name="lastName"><br>
+ 	    <input type="text" name="last_name_field"><br>
 	  Phone number:<br>
-	    <input type="text" name="phone"><br>
+	    <input type="text" name="phone_field"><br>
 	  Email address:<br>
-	    <input type="text" name="email"><br>
+	    <input type="text" name="email_field"><br>
 	    <p><b>Gender:</b></p>
-  	        <input type="radio" name="gender" value="male" checked> Male<br>
-                <input type="radio" name="gender" value="female"> Female<br>
-  	        <input type="radio" name="gender" value="other"> Other
+  	        <input type="radio" name="gender_field" value="male" checked> Male<br>
+                <input type="radio" name="gender_field" value="female"> Female<br>
+  	        <input type="radio" name="gender_field" value="other"> Other
 	          <p><b>Age:</b></p>
-	            <select name="age">
+	            <select name="age_field">
   	              <option value="under18">Under 18</option>
                       <option value="18-24">18-24</option>
                       <option value="25-34">25-34</option>
@@ -29,19 +29,19 @@
 	              <option value="65+">65+</option>
                     </select>
 	              <p><b>My Availability:</b></p>
-  		        <input type="checkbox" name="available" value="Monday">Monday<br>
-  		        <input type="checkbox" name="available" value="Tuesday">Tuesday<br>
-		        <input type="checkbox" name="available" value="Wednesday">Wednesday<br>
-	                <input type="checkbox" name="available" value="Thursday">Thursday<br>
-		        <input type="checkbox" name="available" value="Friday">Friday<br>
-		        <input type="checkbox" name="available" value="Saturday">Saturday<br>
-		        <input type="checkbox" name="available" value="Sunday">Sunday<br>
+  		        <input type="checkbox" name="available_field[]" value="Monday">Monday<br>
+  		        <input type="checkbox" name="available_field[]" value="Tuesday">Tuesday<br>
+		        <input type="checkbox" name="available_field[]" value="Wednesday">Wednesday<br>
+	                <input type="checkbox" name="available_field[]" value="Thursday">Thursday<br>
+		        <input type="checkbox" name="available_field[]" value="Friday">Friday<br>
+		        <input type="checkbox" name="available_field[]" value="Saturday">Saturday<br>
+		        <input type="checkbox" name="available_field[]" value="Sunday">Sunday<br>
 	                  <p><b>Comments:</b></p>
-	    	            <textarea name="comments" rows="10" cols="50">  
+	    	            <textarea name="comments_field" rows="10" cols="50">  
                             </textarea>
 			      <input type="submit" name="Submit">
-	   		        <p hidden>Nick Bledsoe, Creator (nbledsoe@hawk.iit.edu)</p hidden>
-	    </form>
+	   		        <input type="hidden" name="hidden_field" value="Nick Bledsoe, Creator (nbledsoe@hawk.iit.edu)">
+	</form>
     </body>
 	            
 
